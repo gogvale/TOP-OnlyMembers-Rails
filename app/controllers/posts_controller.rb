@@ -9,7 +9,11 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post.save
+    Post.create(
+      user: current_user,
+      body: params[:post][:body]
+    )
+    redirect_to user_posts_path current_user
   end
 
   def edit
@@ -17,10 +21,13 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.save
+    @post = Post.find params[:id]
+    @post.update!(body: params[:post][:body])
+    redirect_to user_posts_path current_user
   end
 
   def destroy
     Post.find(params[:id]).destroy
+    redirect_to user_posts_path current_user
   end
 end
