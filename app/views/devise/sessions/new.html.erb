@@ -1,7 +1,7 @@
 <section class="login-clean">
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <h2>Log in</h2>
+  <h2 class="visually-hidden">Log in</h2>
   <div class="illustration"><i class="icon ion-locked"></i></div>
   <div class="mb-3">
     <%= f.email_field :email, class: 'form-control', autofocus: true, autocomplete: "email", placeholder: 'Email'%>
