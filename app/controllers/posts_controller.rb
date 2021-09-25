@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
+    @posts = @posts.where(user_id: params[:user_id]) if params[:user_id]
   end
 
   def new
