@@ -2,22 +2,9 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
 	<meta name="generator" content="LibreOffice 7.2.0.4 (Linux)"/>
 	<meta name="created" content="2021-09-24T21:26:14.754860146"/>
 	<meta name="changed" content="2021-09-24T21:27:11.854781325"/>
-	<style type="text/css">
-		@page { size: 8.5in 11in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		h4 { margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
-		h4.western { font-family: "Liberation Serif", serif; font-size: 12pt; font-weight: bold }
-		h4.cjk { font-family: "Noto Serif CJK SC"; font-size: 12pt; font-weight: bold }
-		h4.ctl { font-family: "FreeSans"; font-size: 12pt; font-weight: bold }
-		code.western { font-family: "Liberation Mono", monospace }
-		code.cjk { font-family: "Noto Sans Mono CJK SC", monospace }
-		code.ctl { font-family: "Liberation Mono", monospace }
-		a:link { color: #000080; so-language: zxx; text-decoration: underline }
-	</style>
 </head>
 <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h4 class="western">
 Basic Setup</h4>
