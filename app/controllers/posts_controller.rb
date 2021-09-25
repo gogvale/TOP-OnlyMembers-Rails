@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     Post.create(
       user: current_user,
       body: params[:post][:body]
-    )
+    ) unless params[:post][:body].blank?
     redirect_to user_posts_path current_user
   end
 
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find params[:id]
-    @post.update!(body: params[:post][:body])
+    @post.update!(body: params[:post][:body]) unless params[:post][:body].blank?
     redirect_to user_posts_path current_user
   end
 

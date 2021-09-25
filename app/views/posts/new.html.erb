@@ -2,7 +2,7 @@
     <%= form_with model: @post do |form| %>
         <h2 class="text-center">New Post</h2>
         <div class="mb-3">
-            <%= form.text_area :body, class: 'form-control', rows: "14", placeholder: 'Message' %>
+            <%= form.text_area :body, class: 'form-control', rows: "14", placeholder: 'Message', required: true %>
         </div>
         <div class="mb-3">
             <%= link_to 'Cancel', '/', class: "btn btn-primary", style: "background: var(--bs-red) !important;" %>

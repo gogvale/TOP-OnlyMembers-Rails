@@ -3,7 +3,7 @@
         <h2 class="text-center">Edit Post</h2>
         <small><%= @post.user.name %></small>
         <div class="mb-3">
-            <%= form.text_area :body, class: 'form-control', rows: "14", placeholder: 'Message' %>
+            <%= form.text_area :body, class: 'form-control', rows: "14", placeholder: 'Message', required: true %>
         </div>
         <div class="mb-3">
             <%= link_to 'Cancel', '/', class: "btn btn-primary", style: "background: var(--bs-red) !important;" %>
