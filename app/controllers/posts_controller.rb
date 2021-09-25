@@ -22,10 +22,4 @@ class PostsController < ApplicationController
   def destroy
     Post.find(params[:id]).destroy
   end
-
-  private
-
-  def current_user
-    User.find(params[:user_id]).name
-  end
 end
