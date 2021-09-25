@@ -18,42 +18,20 @@
         </div>
     </div>
     <div class="row">
+        
+        <% @posts.each do |post| %>
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title" style="color: var(--bs-green);">Anonymous</h4>
-                    <h6 class="text-muted card-subtitle mb-2">Sept 26, 2021</h6>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Edit</a><a class="card-link" href="#" style="color: var(--bs-red);">Delete</a>
+                    <h4 class="card-title" style="color: var(--bs-green);"><%= post.user.name %></h4>
+                    <h6 class="text-muted card-subtitle mb-2"><%= post.created_at %></h6>
+                    <p class="card-text"><%= post.body %></p>
+                    <a class="card-link" href="#">Edit</a>
+                    <a class="card-link" href="#" style="color: var(--bs-red);">Delete</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title" style="color: var(--bs-green);">Anonymous</h4>
-                    <h6 class="text-muted card-subtitle mb-2">Sept 26, 2021</h6>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Edit</a><a class="card-link" href="#" style="color: var(--bs-red);">Delete</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title" style="color: var(--bs-green);">Anonymous</h4>
-                    <h6 class="text-muted card-subtitle mb-2">Sept 26, 2021</h6>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Edit</a><a class="card-link" href="#" style="color: var(--bs-red);">Delete</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title" style="color: var(--bs-green);">Anonymous</h4>
-                    <h6 class="text-muted card-subtitle mb-2">Sept 26, 2021</h6>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Edit</a><a class="card-link" href="#" style="color: var(--bs-red);">Delete</a>
-                </div>
-            </div>
-        </div>
+        <% end %>
     </div>
 </div>
 <nav class="d-lg-flex justify-content-lg-center" style="margin: 1em;">
